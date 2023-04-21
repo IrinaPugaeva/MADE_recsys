@@ -9,7 +9,7 @@
 Основная идея та же - улучшение нейросетевого рекоммендера. Я добавила информацию об исполнителях в виде эмбеддингов (эмбедднгов артистов), которые конкатенируются к эмбеддингам треков (context и track) - код смотри в ноутбуке `My_contextuel_recommender.ipynb` . Данный подход дал значительное улучшение.
 
 ## Последовательность действий для получения рекомендация и аб-тестирования:
- - Данные для обучения https://www.kaggle.com/datasets/splav12341/mobod-dataset
+ - Данные для обучения (данные с семинара на каггл загружены) https://www.kaggle.com/datasets/splav12341/mobod-dataset
  - Ноутбук для обучения `My_contextuel_recommender.ipynb`
  - Получаем файл с рекомендациями: `tracks_with_recs`
  - Идем в botify - здесь:
@@ -27,7 +27,7 @@
  ```sh
  python sim/run.py --episodes 1000 --config config/env.yml single --recommender remote --seed 31337  
  ```
- данные копируем в локальную папку
+ - данные копируем в локальную папку
  ```sh
  docker cp recommender-container:/app/log/ /Users/username/logs
  ```
