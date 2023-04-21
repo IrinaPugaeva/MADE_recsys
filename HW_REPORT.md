@@ -16,7 +16,7 @@
  ```sh
  docker-compose stop
  ``` 
- если контейер запущен
+ - если контейер запущен
  ```sh
  docker-compose up -d --build 
  ``` 
@@ -31,11 +31,11 @@
  ```sh
  docker cp recommender-container:/app/log/ /Users/username/logs
  ```
- запускаем ноутбук с первого семинара
+ - запускаем ноутбук с первого семинара
 ### Результаты 
- было
+ ![было](https://github.com/IrinaPugaeva/MADE_recsys/blob/master/1.png)
 
- стало
+ ![стало](https://github.com/IrinaPugaeva/MADE_recsys/blob/master/2.png)
 
 ## Изменения
 В исходном коде были сделаны следующие изменения:
